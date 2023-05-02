@@ -1,0 +1,150 @@
+#include <iostream>
+#include <bitset>
+
+using namespace std;
+
+int main()
+{
+	//삼항연산자
+	//변수 = 조건식 ? 참일 때 반환하는 값 : 거짓일 때 반환하는 값
+	//int iA = 20, iB = 10, iResult = 0;
+	//
+	//iResult = (iA > iB) ? iA : iB;
+	//
+	//cout << iResult << endl;
+	
+	//진수
+	//int iDec = 10, iOc = 012, iHex = 0xA;
+	//cout << iDec << " " << iOc << " " << iHex << endl;
+
+	//축약연산자 += -= *= /= %=
+	//int iA = 10;
+	//iA += 5; //iA = iA + 5
+	//cout << iA;
+
+	//증감연산자 ++ --
+	//int iA = 10;
+	//++iA;
+	//cout << iA << endl;
+	// ++iA 전위 : 증감연산자가 앞에 붙는것
+	// 전위 : 선연산 후사용
+	// iA++ 후위 : 증감연산자가 뒤에 붙는것
+	// 후위 : 선사용 후연산
+	//cout << ++iA << endl;
+	//cout << iA << endl;
+	//전위 연산이 조금더 빠르다
+	//후위 연산자도 사용처가 많다
+	
+	//2의 보수
+	//short nA = 8, nB = 0;
+	//bitset<16> bitA = nA, bitB;
+	//cout << nA << endl;
+	//cout << bitA << endl << endl;
+	//nB = (~nA) +1;
+	//bitB = nB;
+	//cout << nB << endl;
+	//cout << bitB << endl << endl;
+	//nA = (~nB) + 1;
+	//bitA = nA;
+	//cout << nA << endl;
+	//cout << bitA << endl << endl;
+
+	//분기문, 조건문
+	// 기준에 따라서 코드의 흐름을 나눈다
+	// if문, switch문, goto문(안쓴다)
+
+	//if (/*조건식*/)
+	//{
+	//	//조건을 만족하면 실행하는 코드 블록
+	//}
+
+	//int iA = 20, iB = 10;
+	//if (iA < iB)
+	//{
+	//	cout << "참입니다" << endl;
+	//}
+	//else
+	//{
+	//	cout << "거짓입니다." << endl;
+	//}
+	//
+	//int iSelect = 2;
+	//if (1 == iSelect) //상수를 앞에 쓰는 이유 : iSelect = 1이렇게 될까봐
+	//{
+	//	cout << "콜라" << endl;
+	//}
+	//else if (2 == iSelect)
+	//{
+	//	cout << "사이다" << endl;
+	//}
+	//else 
+	//{
+	//	cout << "잘못된입력";
+	//}
+
+	//{} : 블록(지역)
+	//int iB = 10;
+	//if (true) 
+	//{
+	//	int iA = 100;
+	//	iB = 20;
+	//}
+	//iA = 5; // 인식 하지 못함
+
+	//switch (상수 조건문)
+	//switch (/*정수 조건*/)
+	//{
+	//case /*상수 분기(정수형태)*/:
+	//	//이 분기에서 실행되는 코드
+	//	break; // switch문 탈출
+	//case /*상수 분기*/:
+	//	break;
+	//default: // if문의 else같은 개념, 위쪽 조건들이 모두 충족되지 않을시 실행됨
+	//	break;
+	//}
+
+	//int iSelect = 1;
+	//switch (iSelect)
+	//{
+	//case 1:
+	//	cout << "콜라" << endl;
+	//	break;
+	//case 2:
+	//	cout << "사이다" << endl;
+	//	break;
+	//default:
+	//	cout << "입력이 잘못되었다." << endl;
+	//	break;
+	//}
+
+	//goto문 (쓰지 말것)
+
+//문제 1. if문을 사용해서 입력 받은 값이 양수인지 음수인지 판별하는 프로그램 작성.
+//int iA;
+//cin >> iA;
+//if (iA > 0)
+//cout << "양수" << endl;
+//else if (iA == 0)
+//cout << "0" << endl;
+//else
+//cout << "음수" << endl;
+//문제 2. 두 정수를 입력받아서 큰쪽에서 작은쪽을 빼는 프로그램 작성.
+//int iA, iB;
+//cin >> iA >> iB;
+//if (iA >= iB)
+//cout << iA - iB << endl;
+//else
+//cout << iB - iA << endl;
+//문제 3. 문제2를 삼항 연산자로 처리하기
+//cout << (iA >= iB) ? iA - iB : iB - iA;
+
+//숙제: 국어 수학 영어 점수를 입력받아 평균을 구한다
+// 평균 점수에 따라 등급을 출력하는 프로그램
+// 100 - 90 A
+// 89 - 80 B
+// 79 - 70 C
+// 69 - 60 D
+// 59 이하 E
+
+//if문으로 짜고 switch문으로도 짜보기
+}

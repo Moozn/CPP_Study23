@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+	//while
+	//while(/*조건식*/)
+	//{
+	//		조건식이 만족됬을때 실행되는 블록
+	//}
+	//탈출조건을 만드는게 필수
+	//
+	//int iA = 0;
+	//while (iA < 10)
+	//{
+	//	cout << iA << endl;
+	//	iA++;
+	//}
+	//while (true)
+	//{
+	//	if (iA > 10) break;
+	// 
+	//	cout << iA << endl;
+	//	iA++;
+	//}
+	//
+	// do ~ while
+	/*
+	do
+	{
+		최초 1회는 무조건 실행 이후 조건식이 참이면 반복하는 영역
+	}while(조건식);
+	*/
+	//int iA = 0;
+	//do {
+	//	cout << iA << endl;
+	//	iA++;
+	//} while (iA < -10);
+
+
+
+	
+}
